@@ -1,4 +1,4 @@
 # Code First Girls
 Final Project
 
-https://isabelle-waltrick.github.io/CFG-Final-Project/
+https://zenny-aledeh.github.io/CFG-Final-Project-main/
