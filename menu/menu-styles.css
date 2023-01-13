@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #ebebeb;
+  line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* [START] NAVIGATION BAR */
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  /* height: 70px; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000b3;
+  padding: 20px 40px;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  top: 0;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ebebeb;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  color: #ffff;
+  line-height: 1.2;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 400;
+}
+
+/* Logo */
+.logo-img-div img {
+  width: 70%;
+}
+
+/* Nav links */
+.navbar-links {
+  font-size: 20px;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ffff;
+  padding: 10px 20px;
+  display: block;
+}
+
+.navbar-links a:hover {
+  transition: 0.3s;
+  color: #e4a358;
+}
+
+/* [END] NAVIGATION BAR */
+
+/* [START] HAMBURGUER MENU */
+.toggle-button {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* [END] NAVIGATION BAR */
+
+/************ YOUR CODE HERE **********/
+.menu-container {
+  max-width: 100%;
+  margin: 20px;
+  padding: 1em;
+}
+
+.heading {
+  text-align: center;
+  color: black;
+}
+
+.heading-description {
+  text-align: center;
+  padding: 1em;
+  color: black;
+  margin: 0;
+  font-size: 14px;
+}
+
+.container p {
+  color: black;
+}
+
+.menu-links {
+  text-align: center;
+}
+
+.food-link,
+.drinks-link {
+  color: black;
+  text-decoration: none;
+  font-size: 26px;
+  padding: 15px;
+}
+
+.menu {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.drinks {
+  display: none;
+}
+
+.food {
+  display: block;
+}
+
+.menu-group-heading-food,
+.menu-group-heading-dessert,
+.menu-group-heading-drinks-special,
+.menu-group-heading-drinks-espresso,
+.menu-group-heading-drinks-tea,
+.menu-group-heading-drinks-cold {
+  margin: 0;
+  padding: 1.5em;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.menu-group,
+.menu-group-special,
+.menu-group-espresso,
+.menu-group-tea,
+.menu-group-cold {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+  text-align: start;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-group-espresso,
+  .menu-group-tea,
+  .menu-group-cold {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+
+  .heading-description {
+    font-size: 20px;
+  }
+}
+
+/************ YOUR CODE HERE **********/
+
+/* [START] FOOTER */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f2f2f;
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+
+  /* Please delete this two lines of code when you finish building your page*/
+  /* This code is only here because if there is no content on the page the footer stays all the way up */
+  /* position: fixed; */
+  /* bottom: 0; */
+}
+
+footer p {
+  line-height: 0.5;
+}
+
+footer h3 {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  color: #ffff;
+}
+
+footer h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #ffff;
+}
+
+footer .footer-column-2 h3 {
+  padding-bottom: 20px;
+}
+
+footer .footer-column-3 p {
+  line-height: 2;
+}
+/* [END] FOOTER */
+
+/* SMALL SCREEN */
+@media (max-width: 740px) {
+  /* [START] MOBILE NAVBAR */
+  .logo-img-div img {
+    width: 60%;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  /* [start] hamburguer menu "X" */
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  /* [end] hamburguer menu "X" */
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 15px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  /* [END] MOBILE NAVBAR */
+
+  /* YOUR RESPOSIVE PAGE CODE HERE (between footer and navbar) */
+
+  /* [START] FOOTER */
+  footer {
+    flex-direction: column;
+    position: static;
+  }
+
+  footer p {
+    line-height: 0.5;
+  }
+
+  footer h3 {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    color: #ffff;
+  }
+
+  footer h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #ffff;
+  }
+
+  footer .footer-column-2 h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  footer .footer-column-2 p {
+    line-height: 0;
+  }
+
+  footer .footer-column-3 p {
+    line-height: 0.5;
+  }
+
+  footer .footer-column-3 h3 {
+    padding-top: 20px;
+  }
+  /* [END] FOOTER */
+}
